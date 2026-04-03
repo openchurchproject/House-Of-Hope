@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>House of Hope Ministries | Women's Sober Living & Shelter | Johnston County, OK</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="House of Hope Ministries: Faith-based women's sober living program in Milburn, OK. Serving Johnston County including Tishomingo, Wapanucka, Ravia. Shelter, NA meetings, job assistance, 73% success rate. The only women's facility in the county.">
+    <meta name="keywords" content="women's shelter Johnston County, sober living program Milburn OK, faith-based recovery, NA meetings Oklahoma, court ordered rehab, temporary housing women, Native American recovery support, addiction help Tishomingo, Lighthouse counseling, House of Hope, transitional housing for women, Christian recovery ministry, women's rehab Johnston County">
+    <meta name="author" content="House of Hope Ministries">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.houseofhopeministriesok.org/">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="House of Hope Ministries | Women’s Recovery & Shelter in Johnston County, OK">
+    <meta property="og:description" content="Faith-based sober living & transitional housing for women in Milburn, OK. Serving all of Johnston County – Tishomingo, Ravia, Wapanucka, Mannsville, and more. 73% success rate, Christian support, NA meetings twice weekly.">
+    <meta property="og:image" content="https://github.com/openchurchproject/House-Of-Hope/raw/main/HOH-L-T.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.houseofhopeministriesok.org/">
+    <meta property="og:site_name" content="House of Hope Ministries">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="House of Hope Ministries | Women’s Sober Living & Shelter">
+    <meta name="twitter:description" content="Only women's facility in Johnston County, OK. Sober living program, job assistance, NA meetings, and a 73% success rate. Serving Milburn, Tishomingo, and all surrounding communities.">
+    <meta name="twitter:image" content="https://github.com/openchurchproject/House-Of-Hope/raw/main/HOH-L-T.png">
+    
+    <!-- Favicon & Logo -->
+    <link rel="icon" type="image/png" href="https://github.com/openchurchproject/House-Of-Hope/raw/main/HOH-L-T.png">
+    <link rel="apple-touch-icon" href="https://github.com/openchurchproject/House-Of-Hope/raw/main/HOH-L-T.png">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(145deg, #fffaf3 0%, #fef5ea 100%);
+            color: #2c2a24;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header - Centered, floating logo with glow, no box */
+        .header-main {
+            background: transparent;
+            text-align: center;
+            padding: 48px 0 32px 0;
+            position: relative;
+        }
+        .logo-float {
+            margin-bottom: 20px;
+            filter: drop-shadow(0 10px 20px rgba(180, 124, 72, 0.25));
+            transition: transform 0.3s ease, filter 0.3s ease;
+            display: inline-block;
+        }
+        .logo-float img {
+            width: 240px;  /* 100% larger than earlier 180px? earlier 180px -> 240px is +33% but looks significantly bigger; can adjust to 280px? but we keep elegant */
+            max-width: 85%;
+            height: auto;
+            border-radius: 32px;
+            background: none;
+            box-shadow: none;
+            border: none;
+            transition: transform 0.3s;
+        }
+        .logo-float:hover {
+            transform: scale(1.02);
+            filter: drop-shadow(0 18px 28px rgba(180, 124, 72, 0.35));
+        }
+        /* remove any border/background from img */
+        .logo-float img, .logo-float {
+            background: transparent;
+        }
+        .header-main h1 {
+            font-size: 3rem;
+            color: #4a2c1a;
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #8b694a;
+            font-weight: 500;
+            max-width: 750px;
+            margin: 0 auto;
+            background: #fef7e8;
+            display: inline-block;
+            padding: 10px 32px;
+            border-radius: 60px;
+            backdrop-filter: blur(2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: #ffffffdd;
+            backdrop-filter: blur(10px);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #f0e2d0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #5c3e28;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #b47c48;
+        }
+
+        /* Sections */
+        section {
+            padding: 64px 0;
+            border-bottom: 1px solid #f3e7db;
+        }
+        .section-title {
+            font-size: 2.3rem;
+            margin-bottom: 48px;
+            color: #4a2c1a;
+            text-align: center;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 3px;
+            background: #cfa87c;
+            margin: 14px auto 0 auto;
+            border-radius: 4px;
+        }
+        .grid-2col {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .card {
+            background: #ffffffea;
+            backdrop-filter: blur(2px);
+            padding: 32px;
+            border-radius: 32px;
+            box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+            transition: all 0.25s;
+            border: 1px solid #ffe8d6;
+        }
+        .card i {
+            font-size: 2.2rem;
+            color: #c28a5c;
+            margin-bottom: 18px;
+        }
+        .stat-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 48px;
+            text-align: center;
+            background: #fff7ef;
+            padding: 44px 28px;
+            border-radius: 80px;
+            border: 1px solid #f3e2d0;
+        }
+        .stat-item h3 {
+            font-size: 2.8rem;
+            color: #b47c48;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .contact-info {
+            background: #ffffffdd;
+            backdrop-filter: blur(4px);
+            border-radius: 48px;
+            padding: 48px 32px;
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto;
+            border: 1px solid #eedbcb;
+        }
+        footer {
+            background: #2b2a24;
+            color: #e9dfd1;
+            padding: 52px 0 40px;
+            text-align: center;
+            border-top: 1px solid #4a3e32;
+        }
+        footer img {
+            filter: brightness(0.95) contrast(1.05);
+            background: transparent;
+            border-radius: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #b47c48;
+            color: white;
+            padding: 12px 32px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .btn:hover {
+            background: #9b623a;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 768px) {
+            .header-main h1 {
+                font-size: 2.2rem;
+            }
+            .tagline {
+                font-size: 0.95rem;
+                padding: 6px 20px;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .stat-item h3 {
+                font-size: 2rem;
+            }
+            .logo-float img {
+                width: 180px;
+            }
+        }
+        .highlight {
+            color: #b47c48;
+            font-weight: 700;
+        }
+        .service-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .service-list li {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .service-list li i {
+            font-size: 1.2rem;
+            width: 28px;
+            margin-top: 3px;
+            color: #c28a5c;
+        }
+        .verse {
+            font-style: italic;
+            font-size: 1.15rem;
+            border-left: 4px solid #cfa87c;
+            padding-left: 28px;
+            margin: 40px 0 20px;
+            background: #fffaf2;
+            padding: 20px 28px;
+            border-radius: 28px;
+        }
+        .towns-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .town-card {
+            background: #ffffff;
+            padding: 18px 20px;
+            border-radius: 28px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            border: 1px solid #f3e3d4;
+        }
+        .town-card i {
+            font-size: 1.5rem;
+            color: #c28a5c;
+            margin-right: 10px;
+        }
+        .two-column-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 24px;
+        }
+        @media (max-width: 640px) {
+            .two-column-list {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* Centering for special cards (Community & Court / Deep Roots) */
+        .centered-card {
+            text-align: center;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .centered-card i {
+            font-size: 2.4rem;
+        }
+        .centered-card h3 {
+            text-align: center;
+        }
+        .card p, .card ul {
+            text-align: left;
+        }
+        /* Adjust deep roots card to be centered block */
+        .deep-root-card {
+            text-align: left;
+        }
+        .inline-block-card {
+            width: 100%;
+        }
+        .footer-logo img {
+            background: transparent;
+            filter: brightness(0.9) drop-shadow(0 0 2px rgba(0,0,0,0.2));
+        }
+    </style>
+</head>
+<body>
+
+<header class="header-main">
+    <div class="container">
+        <div class="logo-float">
+            <img src="https://github.com/openchurchproject/House-Of-Hope/raw/main/HOH-L-T.png" alt="House of Hope Ministries Logo - Women's Shelter and Sober Living">
+        </div>
+        <h1>House of Hope Ministries</h1>
+        <div class="tagline">Faith. Recovery. Restoration. — The only women’s shelter & sober living facility in Johnston County, Oklahoma.</div>
+    </div>
+</header>
+
+<nav class="nav-bar">
+    <div class="container">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#impact">Our Impact</a></li>
+            <li><a href="#service-area">Service Area</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Hope Takes Root Here</h2>
+            <div class="grid-2col">
+                <div>
+                    <p><strong>House of Hope Ministries</strong> has been serving God and the women of southern Oklahoma since March 2022. As the <span class="highlight">only women's residential facility in Johnston County</span>, we provide a safe, faith-centered environment for women seeking freedom from addiction, homelessness, and life-controlling issues. Our program combines evidence-based recovery principles with compassionate Christian discipleship, offering <strong>3–6 month sober living</strong>, temporary crisis housing, and long-term transitional support.</p>
+                    <p>Located in Milburn, OK, we walk alongside each woman to restore dignity, secure employment, recover identification documents, and build a lasting foundation of sobriety. In 2025, our success rate reached <strong>73%</strong> — up from 63% in 2024 — reflecting our commitment to quality over quantity. With a heart for the marginalized, we also serve Native American women from the Chickasaw and Choctaw Nations, honoring their heritage and unique needs.</p>
+                    <div class="verse">
+                        <i class="fas fa-bible"></i> Romans 12:13 — “Share with the Lord’s people who are in need. Practice hospitality.”
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Why We Exist</h3>
+                    <p>Johnston County faces limited recovery resources, especially for women with children or those emerging from incarceration, addiction, or domestic instability. House of Hope fills this gap — offering hope, practical tools, and a spiritual family that believes in second chances. Every woman is met with one-on-one ministry, counseling through Lighthouse, and referrals to rehab when needed.</p>
+                    <p><strong><i class="fas fa-phone"></i> (580) 618-7081</strong><br>📍 P.O. Box 224, Milburn, OK 73450</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Transformational Services</h2>
+            <div class="grid-2col">
+                <div class="card">
+                    <i class="fas fa-home"></i>
+                    <h3>Shelter & Sober Living</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-female"></i> Safe, women-only housing (only women’s facility in Johnston County)</li>
+                        <li><i class="fas fa-calendar-week"></i> 3-6 month residential program + short-term/temporary options (up to 1 week crisis stay)</li>
+                        <li><i class="fas fa-baby-carriage"></i> Separate living area for women with children</li>
+                        <li><i class="fas fa-church"></i> Weekly church services & Bible study</li>
+                        <li><i class="fas fa-users"></i> Narcotics Anonymous meetings twice per week</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Holistic Recovery Support</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-car"></i> Job assistance & transportation until stable</li>
+                        <li><i class="fas fa-id-card"></i> Help obtaining driver’s license, Social Security card, vital documents</li>
+                        <li><i class="fas fa-hand-holding-medical"></i> Working relationship with Lighthouse for professional counseling</li>
+                        <li><i class="fas fa-ambulance"></i> Assistance getting to inpatient rehabilitation centers</li>
+                        <li><i class="fas fa-praying-hands"></i> One-on-one biblical ministry & discipleship</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Centered Community & Court Partnerships Card -->
+            <div class="card centered-card" style="margin-top: 36px; text-align: center;">
+                <i class="fas fa-handshake"></i>
+                <h3>Community & Court Partnerships</h3>
+                <p style="max-width: 800px; margin: 0 auto;">We accept women who are <strong>court-ordered</strong> into a recovery program as well as those seeking help voluntarily. We maintain working relationships with various rehab facilities, other sober living homes, and regional recovery networks — ensuring that even if a woman isn't a fit for our program, we connect her to the right place. God has called us to be a “light and resource” for all who need help, not just those within our walls.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact + Statistics -->
+    <section id="impact">
+        <div class="container">
+            <h2 class="section-title">Real Results: 2025 Impact Report</h2>
+            <div class="stat-grid">
+                <div class="stat-item"><h3>15</h3><p>Full-time residents in 2025</p></div>
+                <div class="stat-item"><h3>11</h3><p>Marked as successes (73% success rate)</p></div>
+                <div class="stat-item"><h3>7</h3><p>Temporary crisis placements (up to 1 week)</p></div>
+                <div class="stat-item"><h3>3</h3><p>Native American women from Chickasaw & Choctaw tribes</p></div>
+            </div>
+            <p style="margin-top: 38px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;"><strong>One powerful story:</strong> A young mother stayed with her two-year-old son for seven months at House of Hope, utilizing our separate living area for women with children. She completed the program and transitioned into stable housing and sobriety. Stories like hers reflect the compassionate, individualized care we provide. Our success rate climbed from 63% in 2024 to 73% in 2025, demonstrating that focusing on quality of care over quantity yields life-changing outcomes.</p>
+            <p style="margin-top: 20px; text-align: center;">We also built partnerships with regional rehabs, expanded transportation services, and continued to break down barriers for women obtaining IDs and employment. Every success echoes God’s faithfulness.</p>
+        </div>
+    </section>
+
+    <!-- Service Area: Johnston County -->
+    <section id="service-area">
+        <div class="container">
+            <h2 class="section-title">Serving Johnston County & Surrounding Communities</h2>
+            <div class="grid-2col">
+                <div>
+                    <p>House of Hope Ministries proudly serves the entirety of <strong>Johnston County, Oklahoma</strong> — a rural area rich in Native American heritage (Chickasaw and Choctaw nations) yet facing significant gaps in addiction recovery resources for women. Our facility in Milburn acts as a central beacon of hope for women from every corner of the county and beyond.</p>
+                    <p><strong>We provide critical services to these communities:</strong></p>
+                    <div class="towns-grid">
+                        <div class="town-card"><i class="fas fa-map-marker-alt"></i> <strong>Milburn</strong><p>Our home base — shelter, Bible studies, NA meetings, and long-term sober living.</p></div>
+                        <div class="town-card"><i class="fas fa-map-marker-alt"></i> <strong>Tishomingo</strong><p>County seat; transportation and sober living options for many women.</p></div>
+                        <div class="town-card"><i class="fas fa-map-marker-alt"></i> <strong>Wapanucka</strong><p>Rural outreach, job assistance, and referral coordination.</p></div>
+                        <div class="town-card"><i class="fas fa-map-marker-alt"></i> <strong>Ravia</strong><p>Partnering with local churches to connect women in crisis.</p></div>
+                        <div class="town-card"><i class="fas fa-map-marker-alt"></i> <strong>Mannsville</strong><p>Short-term shelter for those fleeing unsafe environments.</p></div>
+                        <div class="town-card"><i class="fas fa-map-marker-alt"></i> <strong>Coleman, Connerville, Fillmore, Reagan, Russett</strong><p>Small communities that rely on us as the only women’s residential recovery program within 40 miles.</p></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Why Location Matters</h3>
+                    <p>Johnston County has a population of just over 11,000 residents, with limited public transportation and few mental health or addiction resources. Women seeking recovery often have no option but to leave the county, separating them from family support systems. House of Hope bridges that gap: we offer <strong>local, accessible, faith-based recovery</strong> that allows women to remain connected to their children, jobs, and community while rebuilding their lives. We are uniquely positioned to serve Native American women from Chickasaw and Choctaw tribal communities, honoring their cultural background while providing trauma-informed care.</p>
+                    <p>In 2026 and beyond, we aim to expand our temporary housing capacity and continue forging relationships with tribal health services, ensuring no woman is turned away due to lack of local options.</p>
+                </div>
+            </div>
+            <!-- Deep Roots card centered -->
+            <div class="card centered-card deep-root-card" style="margin-top: 36px; text-align: center;">
+                <i class="fas fa-church"></i>
+                <h3>Deep Roots in Rural Oklahoma Recovery</h3>
+                <p style="max-width: 850px; margin: 0 auto;">Whether a woman is from Tishomingo, Milburn, or a remote homestead near Bromide, we provide the same level of grace and practical assistance: help getting a driver’s license, a ride to an NA meeting, a safe bed, and one-on-one ministry. We also offer referrals to outpatient counseling through Lighthouse and coordinate with residential treatment centers for those needing medical detox. Because many of our residents lack reliable transportation, we’ve built a system of volunteer drivers and partnerships. The opioid crisis and methamphetamine addiction have hit rural communities hard; House of Hope offers a long-term solution rooted in the love of Christ and proven recovery principles.</p>
+                <p style="margin-top: 16px;">For women in Mannsville or Wapanucka needing immediate shelter, we provide temporary options up to one week while we explore long-term beds. In 2025, 7 women utilized this crisis stabilization service. We are the only women’s shelter in Johnston County — a designation we carry with responsibility and joy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional network & unique points -->
+    <section id="more-about">
+        <div class="container">
+            <h2 class="section-title">A Network of Hope</h2>
+            <div class="grid-2col">
+                <div>
+                    <p>Director Jamie Utley emphasizes that “ministry doesn’t always mean focusing only on who and what we have in this building — we are a light and resource to those we cannot directly help.” That’s why House of Hope has established <strong>working relationships with multiple rehabilitation facilities and other sober living homes</strong> across southern Oklahoma. Whether a woman needs inpatient detox, dual diagnosis treatment, or long-term transitional housing elsewhere, we actively facilitate placement. This collaborative approach means more women find healing, even beyond our capacity.</p>
+                    <p>Our weekly schedule includes Narcotics Anonymous meetings (twice weekly), Bible study, church services, and life skills workshops. We also assist with legal advocacy and reunification support for mothers. The foundation of everything we do is the Gospel — offering forgiveness, structure, and accountability.</p>
+                </div>
+                <div>
+                    <h3 style="font-family: 'Playfair Display'; font-size: 1.6rem; margin-bottom: 20px; color:#4a2c1a;">What Makes Us Unique</h3>
+                    <div class="two-column-list">
+                        <div><i class="fas fa-check-circle" style="color:#c28a5c;"></i> Only women’s residential program in Johnston County</div>
+                        <div><i class="fas fa-check-circle" style="color:#c28a5c;"></i> Separate children’s living area — mothers can keep their kids</div>
+                        <div><i class="fas fa-check-circle" style="color:#c28a5c;"></i> 73% documented success rate (2025) — above national averages</div>
+                        <div><i class="fas fa-check-circle" style="color:#c28a5c;"></i> Court-order friendly; work with probation officers</div>
+                        <div><i class="fas fa-check-circle" style="color:#c28a5c;"></i> Direct partnership with Lighthouse Counseling Services</div>
+                        <div><i class="fas fa-check-circle" style="color:#c28a5c;"></i> Assistance obtaining government ID, SS card, driver license</div>
+                    </div>
+                </div>
+            </div>
+            <div class="verse" style="margin-top: 42px; text-align: center;">
+                <i class="fas fa-quote-left"></i> “Not everyone who calls is a fit for House of Hope, but they still need very real help. God has shown me that ministry is being a light and resource to those I am not able to help.” — Jamie Utley, Director
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (No form, no donations) -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Reach Out & Tour Our Facility</h2>
+            <div class="contact-info">
+                <i class="fas fa-phone-alt" style="font-size: 2.4rem; color:#b47c48;"></i>
+                <h3>Call or Write</h3>
+                <p><strong>Phone:</strong> <a href="tel:+15806187081" style="color:#5c3e28; text-decoration: none; font-weight: 600;">(580) 618-7081</a><br>
+                <strong>Mailing Address:</strong> P.O. Box 224, Milburn, OK 73450<br>
+                <strong>Director:</strong> Jamie Utley</p>
+                <p style="margin-top: 24px;">We invite pastors, community partners, and family members to <strong>schedule a tour</strong> of our facility and see firsthand how God is transforming lives. Please call ahead to arrange a time. We are located in Milburn, easily accessible from Tishomingo and surrounding Johnston County towns.</p>
+                <div style="margin-top: 28px;">
+                    <i class="fas fa-calendar-alt"></i> We’d love to welcome you.
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-logo" style="margin-bottom: 20px;">
+            <img src="https://github.com/openchurchproject/House-Of-Hope/raw/main/HOH-L-T.png" alt="House of Hope logo" style="width: 70px; border-radius: 16px; background: none;">
+        </div>
+        <p>House of Hope Ministries — PO Box 224, Milburn, OK 73450</p>
+        <p>“Share with the Lord’s people who are in need. Practice hospitality.” — Romans 12:13</p>
+        <p style="margin-top: 28px;">© 2026 House of Hope Ministries | Faith-based recovery for women in Johnston County, Oklahoma</p>
+        <p>Serving Tishomingo, Milburn, Wapanucka, Ravia, Mannsville, Coleman, and all surrounding communities.</p>
+    </div>
+</footer>
+
+<script>
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if(href && href.startsWith('#')) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const targetElem = document.getElementById(targetId);
+                if(targetElem) {
+                    targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        });
+    });
+    console.log("House of Hope Ministries — Restoring women in Johnston County, OK with the love of Christ.");
+</script>
+</body>
+</html>
